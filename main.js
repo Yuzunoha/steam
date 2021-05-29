@@ -46,10 +46,7 @@ const main = () => {
     '4月の合計金額': n月の合計金額({ objects, n月: 4 }),
     '5月の合計金額': n月の合計金額({ objects, n月: 5 }),
   };
-  // p(result);
-  n月のオブジェクトを抽出する({ objects, n月: 5 }).forEach((o) => {
-    p(o.purchaseDate, o.titles, o.amountYen);
-  });
+  p(result);
 };
 
 main();
