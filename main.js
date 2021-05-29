@@ -13,6 +13,7 @@ const getObjectsFromData = (data) => {
     };
     objects.push(object);
   });
+  objects.sort((a, b) => (a.purchaseDate < b.purchaseDate ? -1 : +1));
   return objects;
 };
 const each = (obj, callback /* (value, keys, data) */) => {
