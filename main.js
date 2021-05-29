@@ -20,7 +20,12 @@ const myFunction = () => {
   const data = シートの中身を返す関数({ スプレッドシートID, シート名: 入力シート名 });
   data.map((e) => {
     const json = JSON.stringify(e[0]);
-    e[0] = json.split('T')[0];
+    e[0] = json.slice(1).split('T')[0];
   });
-  p(data);
+  const objects = [];
+  data.forEach((e) => {
+    const object = '下記中';
+    objects.push(object);
+  });
+  p(objects);
 };
