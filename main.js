@@ -39,14 +39,7 @@ const n月の合計金額 = ({ objects, n月 }) => {
 const main = () => {
   const data = require('./data.js')();
   const objects = getObjectsFromData(data);
-  const result = {
-    '1月の合計金額': n月の合計金額({ objects, n月: 1 }),
-    '2月の合計金額': n月の合計金額({ objects, n月: 2 }),
-    '3月の合計金額': n月の合計金額({ objects, n月: 3 }),
-    '4月の合計金額': n月の合計金額({ objects, n月: 4 }),
-    '5月の合計金額': n月の合計金額({ objects, n月: 5 }),
-  };
-  p(result);
+  p(objects);
 };
 
 main();
