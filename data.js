@@ -5,7 +5,7 @@ const data = [
   ['2021-05-21', 'Outer Wilds', '購入JCB **02', 1542],
   ['2021-05-18', 'Crypt of the NecroDancerSpace Haven', '購入JCB **02', 2170],
   ['2021-05-15', 'TerrariaMainframe DefendersProject Wingman', '購入JCB **02', 3073],
-  ['2021-05-10', 'American Truck\nEuro Truck Simulator 2', '購入JCB **02', 2569],
+  ['2021-05-10', 'American Truck Simulator Euro Truck Simulator 2', '購入JCB **02', 2569],
   ['2021-05-09', 'Enter the GungeonThe Elder Scrolls V: Skyrim Special Edition', '購入JCB **02', 2840],
   ['2021-05-05', 'WarpipsLearning Factory', '購入JCB **02', 2704],
   ['2021-05-02', 'NieR:Automata&trade; Game of the YoRHa Edition', '購入JCB **02', 2640],
