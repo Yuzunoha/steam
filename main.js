@@ -3,8 +3,7 @@
 'use strict';
 
 const p = console.log;
-const main = () => {
-  const data = require('./data.js')();
+const getObjectsFromData = (data) => {
   const objects = [];
   data.forEach((e) => {
     const object = {
@@ -14,6 +13,11 @@ const main = () => {
     };
     objects.push(object);
   });
+  return objects;
+};
+const main = () => {
+  const data = require('./data.js')();
+  const objects = getObjectsFromData(data);
   p(objects);
 };
 
