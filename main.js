@@ -18,5 +18,9 @@ const myFunction = () => {
   /* 処理 */
   const { スプレッドシートID, 入力シート名 } = 入力値;
   const data = シートの中身を返す関数({ スプレッドシートID, シート名: 入力シート名 });
+  data.map((e) => {
+    const json = JSON.stringify(e[0]);
+    e[0] = json.split('T')[0];
+  });
   p(data);
 };
