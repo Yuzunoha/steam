@@ -5,12 +5,16 @@
 const p = console.log;
 const main = () => {
   const data = require('./data.js')();
-  const object = {
-    購入日: 0,
-    品目: 0,
-    金額: 0,
-  };
-  p(object);
+  const objects = [];
+  data.forEach((e) => {
+    const object = {
+      purchaseDate: e[0],
+      titles: e[1],
+      amountYen: e[3],
+    };
+    objects.push(object);
+  });
+  p(objects);
 };
 
 main();
