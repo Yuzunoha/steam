@@ -1,6 +1,7 @@
 'use strict';
 
 const data = [
+  ['2021-05-29', 'Kenshi', '購入JCB **02', 2100],
   ['2021-05-27', 'Port Royale 3', '購入JCB **02', 500],
   ['2021-05-21', 'Outer Wilds', '購入JCB **02', 1542],
   ['2021-05-18', 'Crypt of the NecroDancerSpace Haven', '購入JCB **02', 2170],
