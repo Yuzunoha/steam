@@ -15,10 +15,19 @@ const getObjectsFromData = (data) => {
   });
   return objects;
 };
+const each = (obj, callback /* (value, keys, data) */) => {
+  const ret = [];
+  const keys = Object.keys(obj);
+  for (const key of keys) {
+    const value = obj[key];
+    ret.push(callback(value, key, obj));
+  }
+  return ret;
+};
 const main = () => {
   const data = require('./data.js')();
   const objects = getObjectsFromData(data);
-  p(objects);
+  each(objects, (v) => p(v));
 };
 
 main();
