@@ -22,10 +22,5 @@ const myFunction = () => {
     const json = JSON.stringify(e[0]);
     e[0] = json.slice(1).split('T')[0];
   });
-  const objects = [];
-  data.forEach((e) => {
-    const object = '下記中';
-    objects.push(object);
-  });
-  p(objects);
+  p(data);
 };
