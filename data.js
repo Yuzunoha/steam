@@ -50,6 +50,9 @@ const data = [
   ['2016-03-26', 'DARK SOULS™ II: Scholar of the First Sin', '購入Visa **39', 5200],
 ];
 
-const getData = () => data;
+const getData = () => {
+  /* 2021年に限定する */
+  return data.filter((record) => 2021 === Number(record[0].split('-')[0]));
+};
 
 module.exports = getData;
